@@ -7,6 +7,8 @@ import simu.model.OmaMoottori;
 
 public class Simulaattori { //Tekstipohjainen
 
+    //Merge test
+
 	public static void main(String[] args) {
 		
 		Trace.setTraceLevel(Level.INFO);

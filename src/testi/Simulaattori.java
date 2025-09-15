@@ -4,6 +4,7 @@ import simu.framework.Moottori;
 import simu.framework.Trace;
 import simu.framework.Trace.Level;
 import simu.model.OmaMoottori;
+// Testaan haaroja
 
 public class Simulaattori { //Tekstipohjainen
 

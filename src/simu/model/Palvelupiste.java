@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import eduni.distributions.ContinuousGenerator;
 
 // Testataan toimivuutta
+// Testataan branch
 
 // TODO:
 // Palvelupistekohtaiset toiminnallisuudet, laskutoimitukset (+ tarvittavat muuttujat) ja raportointi koodattava

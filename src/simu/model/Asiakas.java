@@ -51,11 +51,7 @@ public class Asiakas {
 		Trace.out(Trace.Level.INFO,"Asiakas "+id+ " poistui: " +poistumisaika);
 		Trace.out(Trace.Level.INFO,"Asiakas "+id+ " viipyi: " +(poistumisaika-saapumisaika));
 		sum += (poistumisaika-saapumisaika);
-        /*if (id % 3 == 0) {
-            System.out.println("Autokaista-asiakas");
-        }
 
-         */
         if (autokaista == true)
             System.out.println("Autokaista-asiakas");
 		double keskiarvo = sum/id;

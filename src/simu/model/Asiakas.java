@@ -10,13 +10,19 @@ public class Asiakas {
 	private int id;
 	private static int i = 1;
 	private static long sum = 0;
-	
+    private boolean autokaista;
+
 	public Asiakas(){
 	    id = i++;
-	    
+        if (id % 3 == 0) {
+            autokaista = true;
+        } else {
+            autokaista = false;
+        }
+
 		saapumisaika = Kello.getInstance().getAika();
 		Trace.out(Trace.Level.INFO, "Uusi asiakas nro " + id + " saapui klo "+saapumisaika);
-	}
+    }
 
 	public double getPoistumisaika() {
 		return poistumisaika;
@@ -33,7 +39,6 @@ public class Asiakas {
 	public void setSaapumisaika(double saapumisaika) {
 		this.saapumisaika = saapumisaika;
 	}
-	
 
 
 	public int getId() {
@@ -46,6 +51,13 @@ public class Asiakas {
 		Trace.out(Trace.Level.INFO,"Asiakas "+id+ " poistui: " +poistumisaika);
 		Trace.out(Trace.Level.INFO,"Asiakas "+id+ " viipyi: " +(poistumisaika-saapumisaika));
 		sum += (poistumisaika-saapumisaika);
+        /*if (id % 3 == 0) {
+            System.out.println("Autokaista-asiakas");
+        }
+
+         */
+        if (autokaista == true)
+            System.out.println("Autokaista-asiakas");
 		double keskiarvo = sum/id;
 		System.out.println("Asiakkaiden läpimenoaikojen keskiarvo tähän asti "+ keskiarvo);
 	}

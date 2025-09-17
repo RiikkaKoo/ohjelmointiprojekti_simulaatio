@@ -13,6 +13,7 @@ public class OmaMoottori extends Moottori{
 	public OmaMoottori(){
 
 		palvelupisteet = new Palvelupiste[8];
+
         // Tilauksen teko:
 		palvelupisteet[0]=new Palvelupiste(new Normal(7,6), tapahtumalista, TapahtumanTyyppi.FIN1); // Autokaista
         palvelupisteet[1]=new Palvelupiste(new Normal(7,6), tapahtumalista, TapahtumanTyyppi.FIN2); // Palvelutiski

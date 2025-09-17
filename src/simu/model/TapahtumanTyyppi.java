@@ -9,6 +9,7 @@ public enum TapahtumanTyyppi implements ITapahtumanTyyppi{
 
 }
 
+
 /* TAPAHTUMAT:
 
 ARR1: Asiakas saapuu autokaistalle

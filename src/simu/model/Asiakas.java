@@ -11,14 +11,19 @@ public class Asiakas {
 	private static int i = 1;
 	private static long sum = 0;
     private boolean autokaista;
+    private int autoid = 1;
+    private static int j = 1;
 
 	public Asiakas(){
 	    id = i++;
-        if (id % 3 == 0) {
+
+        autoid = j++;
+        if (autoid % 3 == 0) {
             autokaista = true;
         } else {
             autokaista = false;
         }
+
 
 		saapumisaika = Kello.getInstance().getAika();
 		Trace.out(Trace.Level.INFO, "Uusi asiakas nro " + id + " saapui klo "+saapumisaika);
@@ -44,6 +49,7 @@ public class Asiakas {
 	public int getId() {
 		return id;
 	}
+
 	
 	public void raportti(){
 		Trace.out(Trace.Level.INFO, "\nAsiakas "+id+ " valmis! ");
